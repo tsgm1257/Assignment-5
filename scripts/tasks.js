@@ -1,12 +1,29 @@
 const completeButton = document.querySelectorAll(".c-btn");
 const activityLog = document.getElementById("activity-log");
 const clearButton = document.getElementById("clear-btn");
+const currentDay = document.getElementById("current-day");
+const currentDate = document.getElementById("current-date");
+
+const now = new Date();
+const options = {
+  weekday: "short",
+  year: "numeric",
+  month: "short",
+  day: "numeric",
+};
+const formattedDate = now.toLocaleDateString("en-US", options);
+
+const [day, month, date, year] = formattedDate.split(" ");
+
+currentDay.textContent = `${day}`;
+currentDate.textContent = `${month} ${date} ${year}`;
 
 for (const button of completeButton) {
   button.addEventListener("click", function (event) {
     event.preventDefault();
     const cardBody = button.closest(".card-body");
     const cardTitle = cardBody.querySelector(".card-title").textContent;
+
     const now = new Date();
     const currentTime = now.toLocaleTimeString({
       hour: "2-digit",
