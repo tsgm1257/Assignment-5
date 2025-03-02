@@ -12,6 +12,237 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <style>
+      .poppins {
+        font-family: "Poppins", serif;
+      }
+    </style>
   </head>
-  <body></body>
+  <body class="bg-gray-100 poppins container mx-auto">
+    <header class="">
+      <!-- Navbar Section -->
+      <nav class="my-5">
+        <div class="navbar rounded-2xl bg-white shadow-sm p-6">
+          <div class="flex flex-1 items-center">
+            <img class="w-14" src="assets/logo.png" alt="" />
+            <a class="ml-2 text-3xl"
+              >Dev<span class="font-bold m-0">Board</span></a
+            >
+          </div>
+          <div class="flex gap-9">
+            <button class="flex rounded-full bg-slate-100 gap-2 py-2 px-4">
+              <img src="assets/checkbox.png" alt="" />
+              <h2 class="text-3xl font-bold">23</h2>
+            </button>
+            <button class="bg-slate-100 rounded-full">
+              <img src="assets/theme-btn.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main Section -->
+    <main class="mb-8">
+      <div class="grid grid-cols-4 gap-4">
+        <!-- Left Section -->
+        <div class="col-span-3 bg-white p-4 rounded-lg shadow">
+          <section class="flex justify-between items-center mb-12">
+            <!-- Tasks Count -->
+            <div
+              class="flex items-center space-x-4 bg-gray-100 py-6 px-16 rounded-xl"
+            >
+              <div class="bg-white rounded-full p-2">
+                <img src="assets/checkbox.png" alt="" />
+              </div>
+              <div>
+                <h3 class="text-sm text-gray-700">Task Assigned</h3>
+                <p class="text-2xl font-semibold">05</p>
+              </div>
+            </div>
+            <!-- Discover Messege -->
+            <div
+              class="bg-gradient-to-r from-blue-500 to-indigo-300 rounded-lg py-4 pl-7 pr-28 text-white flex items-center space-x-4"
+            >
+              <img class="w-16" src="assets/board.png" alt="" />
+              <div>
+                <p class="teext-lg font-semibold">
+                  Discover Something <br />New Today
+                </p>
+              </div>
+            </div>
+            <!-- Date -->
+            <div
+              class="flex items-center space-x-4 bg-gray-100 py-6 px-16 rounded-xl"
+            >
+              <div class="bg-white rounded-full p-2">
+                <img src="assets/calender.png" alt="" />
+              </div>
+              <div>
+                <h3 class="text-sm text-gray-700">Wed,</h3>
+                <p class="text-2xl font-semibold">Jul 28 2025</p>
+              </div>
+            </div>
+          </section>
+          <section class="grid grid-cols-3 gap-6 mb-4">
+            <!-- ShopEase Card -->
+          <div class="card bg-gray-100">
+            <div class="card-body">
+              <h4
+                class="bg-white py-2 px-4 w-24 rounded-lg font-medium text-gray-600"
+              >
+                ShopEase
+              </h4>
+              <h2 class="card-title">Fix Mobile Button Issue</h2>
+              <p class="text-sm">
+                Debug using Chrome DevTools, check for overlapping...
+              </p>
+              <div class="card-actions justify-between items-center mt-4">
+                <p class="text-sm">
+                  Deadline <br /><span class="text-sm font-bold"
+                    >21 March 2025</span
+                  >
+                </p>
+                <button class="btn btn-sm btn-primary">Completed</button>
+              </div>
+            </div>
+          </div>
+          <!-- CloudSync Card -->
+          <div class="card bg-gray-100">
+            <div class="card-body">
+              <h4
+                class="bg-white py-2 px-4 w-24 rounded-lg font-medium text-gray-600"
+              >
+                CloudSync
+              </h4>
+              <h2 class="card-title">Add Dark Mode</h2>
+              <p class="text-sm">
+                Store the user's preference in localStorage, update CSS
+                variables dynamically, and apply a smooth transition effect...
+              </p>
+              <div class="card-actions justify-between items-center mt-4">
+                <p class="text-sm">
+                  Deadline <br /><span class="text-sm font-bold"
+                    >21 March 2025</span
+                  >
+                </p>
+                <button class="btn btn-sm btn-primary">Completed</button>
+              </div>
+            </div>
+          </div>
+          <!-- SwiftPay Card -->
+          <div class="card bg-gray-100">
+            <div class="card-body">
+              <h4
+                class="bg-white py-2 px-4 w-24 rounded-lg font-medium text-gray-600"
+              >
+                SwiftPay
+              </h4>
+              <h2 class="card-title">Optimize Home page </h2>
+              <p class="text-sm">
+                Debug using Chrome DevTools, check for overlapping elements, and
+                ensure onClick works properly and ensure onClick works
+                properly...
+              </p>
+              <div class="card-actions justify-between items-center mt-4">
+                <p class="text-sm">
+                  Deadline <br /><span class="text-sm font-bold"
+                    >21 March 2025</span
+                  >
+                </p>
+                <button class="btn btn-sm btn-primary">Completed</button>
+              </div>
+            </div>
+          </div>
+          <!-- Meta Card -->
+          <div class="card bg-gray-100 ">
+            <div class="card-body">
+              <h4
+                class="bg-white py-2 px-4 w-24 rounded-lg font-medium text-gray-600"
+              >
+                Meta
+              </h4>
+              <h2 class="card-title">Add new emoji 🤲</h2>
+              <p class="text-sm">
+                Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly...
+              </p>
+              <div class="card-actions justify-between items-center mt-4">
+                <p class="text-sm">
+                  Deadline <br /><span class="text-sm font-bold"
+                    >21 March 2025</span
+                  >
+                </p>
+                <button class="btn btn-sm btn-primary">Completed</button>
+              </div>
+            </div>
+          </div>
+          <!-- Google Card -->
+          <div class="card bg-gray-100">
+            <div class="card-body">
+              <h4
+                class="bg-white py-2 px-4 w-24 rounded-lg font-medium text-gray-600"
+              >
+                Google LLC
+              </h4>
+              <h2 class="card-title">Integrate OpenAI API</h2>
+              <p class="text-sm">
+                Debug using Chrome DevTools, check for overlapping elements, and
+                ensure onClick works properly...
+              </p>
+              <div class="card-actions justify-between items-center mt-4">
+                <p class="text-sm">
+                  Deadline <br /><span class="text-sm font-bold"
+                    >21 March 2025</span
+                  >
+                </p>
+                <button class="btn btn-sm btn-primary">Completed</button>
+              </div>
+            </div>
+          </div>
+          <!-- Glassdoor card -->
+          <div class="card bg-gray-100">
+            <div class="card-body">
+              <h4
+                class="bg-white py-2 px-4 w-24 rounded-lg font-medium text-gray-600"
+              >
+                Glassdoor
+              </h4>
+              <h2 class="card-title">Improve Job searching</h2>
+              <p class="text-sm">
+                Debug using Chrome DevTools, check for overlapping elements, and
+                ensure onClick works properly...
+              </p>
+              <div class="card-actions justify-between items-center mt-4">
+                <p class="text-sm">
+                  Deadline <br /><span class="text-sm font-bold"
+                    >21 March 2025</span
+                  >
+                </p>
+                <button class="btn btn-sm btn-primary">Completed</button>
+              </div>
+            </div>
+          </div>
+        </div>
+          </section>
+
+        <!-- Right Section -->
+        <div class="col-span-1 bg-white p-4 rounded-lg shadow text-center">
+          <div class="flex justify-center items-center space-x-2 mb-4">
+            <img src="assets/activity.png" alt="" />
+            <h3 class="text-lg font-semibold">Activity Log</h3>
+          </div>
+          <button class="btn btn-primary rounded-lg border-none">
+            Clear History
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
