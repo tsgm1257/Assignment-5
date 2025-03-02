@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevBoard</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+    <!-- Tailwind & DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <style>
+      .poppins {
+        font-family: "Poppins", serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <section class="container poppins mx-auto">
+      <header class="">
+        <!-- Navbar Section -->
+        <nav class="py-5">
+          <div class="navbar rounded-2xl bg-white shadow-sm p-6">
+            <div class="flex flex-1 items-center">
+              <img class="w-14" src="assets/logo.png" alt="" />
+              <a class="ml-2 text-3xl"
+                >Dev<span class="font-bold m-0">Board</span></a
+              >
+            </div>
+            <div id="back-btn" class="flex gap-9">
+              <button class="bg-purple-800 btn rounded-lg text-white">
+                Back to Desk
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <h2 class="text-2xl font-bold text-center">Blogs</h2>
+        <!-- Questions & Answers -->
+        <section class="">
+          <!-- Question 1 -->
+          <div class="pt-4 my-4 bg-base-100 border border-base-300">
+            <div class="px-4 mb-4 font-semibold">
+              Question 1: What are the different ways to select an element in
+              the DOM?
+            </div>
+            <hr class="border-dashed text-gray-300" />
+            <div class="px-4 my-4 text-sm">
+              There are many ways to select elements in the DOM
+              <ul>
+                <li>getElementById()</li>
+                <li>getElementsByClassName()</li>
+                <li>getElementsByTagName()</li>
+                <li>querySelector()</li>
+                <li>querySelectorAll()</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Question 2 -->
+          <div class="pt-4 my-4 bg-base-100 border border-base-300">
+            <div class="px-4 mb-4 font-semibold">
+              Question 2: What is the difference between innerHTML, innerText,
+              and textContent?
+            </div>
+            <hr class="border-dashed text-gray-300" />
+            <div class="px-4 my-4 text-sm">
+              The innerHTML returns HTML contents with tags and styling. While
+              the innerText only returns text content with styling without the
+              tags. Finally, textContent returns only the text content without
+              any tags or stylings.
+            </div>
+          </div>
+          <!-- Question 3 -->
+          <div class="pt-4 my-4 bg-base-100 border border-base-300">
+            <div class="px-4 mb-4 font-semibold">
+              Question 3: What is event delegation in the DOM?
+            </div>
+            <hr class="border-dashed text-gray-300" />
+            <div class="px-4 my-4 text-sm">
+              Event delegation is where using an event listener on a parent
+              element to handle events on it's child elements.
+            </div>
+          </div>
+          <!-- Question 4 -->
+          <div class="pt-4 my-4 bg-base-100 border border-base-300">
+            <div class="px-4 mb-4 font-semibold">
+              Question 4: What is event bubbling in the DOM?
+            </div>
+            <hr class="border-dashed text-gray-300" />
+            <div class="px-4 my-4 text-sm">
+              Event bubbling is where an event on an element first triggers
+              event listeners on that element, then on its parent, then
+              grandparent, and so on up the DOM tree
+            </div>
+          </div>
+          <!-- Question 5 -->
+          <div class="pt-4 my-4 bg-base-100 border border-base-300">
+            <div class="px-4 mb-4 font-semibold">
+              Question-5: How do you create, add, and remove elements using
+              JavaScript?
+            </div>
+            <hr class="border-dashed text-gray-300" />
+            <div class="px-4 my-4 text-sm">
+              <ol>
+                <li>Create: document.createElement(tagName)</li>
+                <li>Add: parent.appendChild(child)</li>
+                <li>Remove: parent.removeChild(child)</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+      </main>
+    </section>
+    <script src="scripts/tasks2.js"></script>
+  </body>
+</html>

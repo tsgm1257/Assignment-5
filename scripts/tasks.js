@@ -3,6 +3,7 @@ const activityLog = document.getElementById("activity-log");
 const clearButton = document.getElementById("clear-btn");
 const currentDay = document.getElementById("current-day");
 const currentDate = document.getElementById("current-date");
+const blogButton = document.getElementById("blog-btn");
 const themeButton = document.getElementById("theme-btn");
 const body = document.body;
 const bgColors = [
@@ -30,6 +31,10 @@ themeButton.addEventListener("click", function () {
 
   const randomColor = Math.floor(Math.random() * bgColors.length);
   body.classList.add(bgColors[randomColor]);
+});
+
+blogButton.addEventListener("click", function () {
+  window.location.href = "blog.html";
 });
 
 const now = new Date();
@@ -62,9 +67,9 @@ for (const button of completeButton) {
 
     const p = document.createElement("p");
     p.innerHTML = `
-    <div class="my-5 p-3 text-left rounded-lg bg-gray-100 >
-        <div class="text-sm">You have completed the task ${cardTitle} at ${currentTime}</div>
-    </div>`;
+        <div class="my-5 p-3 text-left rounded-lg bg-gray-100 >
+            <div class="text-sm">You have completed the task ${cardTitle} at ${currentTime}</div>
+        </div>`;
     activityLog.appendChild(p);
 
     button.classList.remove("btn-primary");
@@ -79,6 +84,15 @@ for (const button of completeButton) {
     const convertedCount = parseInt(tasksCount);
     const sub = convertedCount - 1;
     document.getElementById("tasks-count").innerText = sub;
+
+    setTimeout(function () {
+      const tasksCount = document.getElementById("tasks-count").innerText;
+      const convertedCount = parseInt(tasksCount);
+
+      if (convertedCount === 0) {
+        alert("Congrats!!! You have completed all the current tasks");
+      }
+    }, 100);
   });
 }
 
